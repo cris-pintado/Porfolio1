@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Data Science Porfolio on Enrique Alcalde</title>
+    <link>https://enriquespr.github.io/Enrique_portfolio_web/</link>
+    <description>Recent content in My Data Science Porfolio on Enrique Alcalde</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://enriquespr.github.io/Enrique_portfolio_web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 1: Plant Disease Estimator</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_1/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_1/</guid>
+      <description>Leaf_disease_estimator See full code here.
+An App to estimate leaf spot disease scores on cereals 🌾   Description: The goal of this project was to use CNNs to predict the disease rating, from an input image.
+  Introduction: Plant diseases have long been one of the major threats to food security because they dramatically reduce the crop yield and compromises its quality. Accurate and precise estimation of the disease level has been a difficult challenge.</description>
+    </item>
+    
+    <item>
+      <title>Project 2: Mushroom Recognition Classifier using CNNs</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_2/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_2/</guid>
+      <description>Goal of the project: To create a tool able to classify mushrooms from pictures.
+Introduction: Mushrooms represent an important food source and they are used extensively in cooking 🍄👨🏼‍🍳, in many cuisines (notably Chinese, Korean, European, and Japanese). Furthermore, many people enjoy mushroom collection as a outdoor activity. However, this activity, entails some health risk, since some species that are poisoness look similar to edible specimens. In the example below I present such case of similarity between a delicious and edible mushroom Macrolepiota mastoidea and a Amanita phaloides which ingestion can lead to death 💀.</description>
+    </item>
+    
+    <item>
+      <title>Project 3: Gene Expression Analyses in Arabidopsis Using Machine Learning/ Deep Learning</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_3/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_3/</guid>
+      <description>Framing the problem:   The unequal utilization of synonymous codons (CUB) affects numerous cellular processes i.e. translation rates, protein folding and mRNA degradation [Ref].
+  The use of synonymous codons in the gene coding regions are not random, and CUB is an essential feature of most genomes, which has been reported to have an strong impact on the transcription levels of genes [Ref] 🔬📚🔠.
+  Since codons within a synonymous codon group are translated at different rates, many computational translation models rely on analyzing synonymous codons.</description>
+    </item>
+    
+    <item>
+      <title>Project 4: Drug Discovery using Machine Learning</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_4/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_4/</guid>
+      <description>Description: The goal of this project is to use data from the ChEMBL Database to train a model that can predict the activity of a potential drug based on its chemical properties. This can be used to study the chemical features that are critical in the drug effectiveness, and to study best molecular targets to act upon the specific disease.
+In this project I will focus on studying possible drugs targeting proteins with a role in prostate cancer development 🧫🔬⚙.</description>
+    </item>
+    
+    <item>
+      <title>Project 5: Flower classification using a Convolutional Neural Network (CNN)</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_5/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_5/</guid>
+      <description>Description: In this image classification project, I trained a CNN model capable of classifying 5 types of flowers with a 98% accuracy by using transfer learning and data augmentation. 🌼🌷🌻❓
+See full code here.
+Link to GitHub Repository
+  Code and Resources Used Python Version: 3.7
+Packages: pandas, numpy, random, os, cv2, pathlib, PIL, sklearn, matplotlib, seaborn, tensorflow (2.3.1) and keras (2.4.0).
+1. Load and inspect the data:   Create the path list using glob</description>
+    </item>
+    
+    <item>
+      <title>Project 6: Car Price Estimator</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_6/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_6/</guid>
+      <description>Description: An end-to-end project in which I scrape , prepare, analyse the data, find a model and create a web app able to accurately predict second hand prices cars in Spain.
+This is a great tool to have if you are looking for a second car or if you want to sell yours. 🚗🚓🚕🚐🚙🚓💨
+Code and Resources Used: Python Version: 3.7
+Packages: pandas, numpy, datetime, re, requests, csv, sklearn, matplotlib, seaborn, plotly, pickle, flask, jsonify, json and heroku.</description>
+    </item>
+    
+    <item>
+      <title>Project 7: Covid-19 Exploratory Data Analysis</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_7/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_7/</guid>
+      <description>Goal of the project: To perform EDA of covid data, and create a tool to generate visually appealing plots to get insight into the evolution of the pandemia.
+See full project code here
+Link to GitHub Repository
+Creation of an EDA Covid app and Exploratory Data Analyses of Covid Data. Coronavirus disease 2019 (COVID‑19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). It was first identified in December 2019 in Wuhan, Hubei, China, and has resulted in an ongoing pandemic.</description>
+    </item>
+    
+    <item>
+      <title>Project 8: Predicting Rental Bike Usage</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_8/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_8/</guid>
+      <description>Description: I will be using a dataset containing information from a bicycle rental company called capital bikeshare located in Washington D.C founded in 2010. The aim is to use the data from the past 10 years (2010-2020) to develop a model that can predict bicycle usage (Number of trips and total time ride usage) at a given day.
+🚲🚲☔🌞🕒
+Code and Resources Used: Python Version: 3.7
+Packages: pandas, numpy, datetime, os, sklearn, matplotlib, seaborn, plotly.</description>
+    </item>
+    
+    <item>
+      <title>Project 9: Red Wine Quality Classification</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_9/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_9/</guid>
+      <description>Description: In this project we will tackle a multi-classification problem using supervised ML on a well-known dataset containing red wine quality parameters. Find the dataset here. This dataset contains quality parameters for 1596 red-wines, which we can use to build a model that predicts red wine quality. Following analyses of feature distribution and data preprocessing, several classification models were trained and their performance assessed. Three models (SVC, RFC and ETC) were chosed, tuned and ensembled using sorf voting classifier 🍷⭐⭐⭐⭐⭐</description>
+    </item>
+    
+    <item>
+      <title>Project 10: BoardGames Exploratory Data Analysis</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_10/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_10/</guid>
+      <description>Description 🎭🎲🎴♠🧩: An Exploratory Data Analyses (EDA) project in which a board game database is analysed to investigate what factors drive sales for these products.
+Code and Resources Used Python Version: 3.7 Packages: pandas, numpy, datetime, scipy, sklearn, matplotlib, seaborn, BeautifulSoup, requests, re.
+See full project here.
+Link to GitHub Repository
+1. Data cleaning and feature engineering:   Handled Nan values:
+ Columns with more than 40 % nan values were directly removed.</description>
+    </item>
+    
+    <item>
+      <title>Project 11: Predicting the outcome of tennis matches</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_11/</link>
+      <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_11/</guid>
+      <description>Summary:   I scrapped the data from ATP tournaments, matches and players from 1999 to 2020 (&amp;gt; 78000 matches).
+  I performed data cleaning steps and feature engineering to create information of the players form at the moment of the upcoming match. 🎾🏆🥇
+  Exploratory data analyses were carried out to get insight into the features correlation and distribution. This allowed to select the most relevant features for the model.</description>
+    </item>
+    
+    <item>
+      <title>Project 12: House Rental Price Predictor</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_12/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_12/</guid>
+      <description>Summary:   Scraped over 2000 house rent information from https://www.pisos.com/ using python and the beautifulsoup library.
+  Performed data cleaning steps and removed outliers.
+  Exploratory Data Analyses shed light into the most important parameters driving house prices in Spain. These parameters were chosen in the model building process.
+  Optimized Linear, Decission Tree, Random Forest, Support Vector Regressors using GridsearchCV to find the best model 💲💲🏚🏠💲⛪💲.</description>
+    </item>
+    
+    <item>
+      <title>Project 13: Madrid House Price Estimator</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_13/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_13/</guid>
+      <description>Summary:   Performed data cleaning steps and removed outliers.
+  Exploratory Data Analyses shed light into the most important parameters driving house prices in Spain.These parameters were chosen in the model building process.
+  Optimized Linear, Decission Tree and Random Forest Regressors using GridsearchCV to reach the best model.
+  Wrote a python flask server that uses the saved model to serve http requests.
+  Built a website in html, css and javascript that allows user to predict rental prices in Madrid 🏘💲💲🏚🏠💲⛪.</description>
+    </item>
+    
+    <item>
+      <title>Project 14: Data Science Salary Estimator</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/project_14/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/project_14/</guid>
+      <description>Summary:   Created a tool that estimates data science salaries to help data scientists negotiate their income when they get a job.
+  Scraped over 1000 job descriptions from glassdoor using python and selenium.
+  Engineered features from the text of each job description to quantify the value companies put on python, excel, aws, and spark.
+  Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to reach the best model 💲📊👀</description>
+    </item>
+    
+    <item>
+      <title>A taste of my experience as crop researcher</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/my_phd/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/my_phd/</guid>
+      <description>Description 🔬🧬🧫🌱🌾: In this section I would like to give a brief example of all the steps involved in the data analysis process as a crop scientist. Here I provide a simple experiment that I carried out during my PhD as example. Furthermore, I discuss my experience analysing complex biological data, and how I summarized 300Gb of proteomic data into to a single figure. I think that this comes to show the importance of learning data analytic skills and tools.</description>
+    </item>
+    
+    <item>
+      <title>A study on tomato plants-Botrytis Cinerea interactions.</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/post/my_kul_masters/</link>
+      <pubDate>Sun, 01 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/post/my_kul_masters/</guid>
+      <description>Description 🔬🧬🧫🌱🌾: The goal of this project was to better understand the role of a set of tomato pathogenesis-related genes (PR genes) agaist an economically devastating fungus (B.cinerea).
+Two main aspects of these genes were studied:
+1. PR gene expression level by q-RT-PCR: During this experiment, we analized the constitutive expression level of the PR genes in different tomato plant parts (Figure 1). In order to do so, plant samples were immediately snap-frozen and crushed in liquid nitrogen and stored at -80°C.</description>
+    </item>
+    
+    <item>
+      <title>Contact Information</title>
+      <link>https://enriquespr.github.io/Enrique_portfolio_web/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://enriquespr.github.io/Enrique_portfolio_web/contact/</guid>
+      <description>   Platform Link     Gmail enriquealcaldegrau@gmail.com   LinkedIn https://www.linkedin.com/in/enriqueag/   Github https://github.com/EnriqueSPR    </description>
+    </item>
+    
+  </channel>
+</rss>
