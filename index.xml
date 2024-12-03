@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Data Science Porfolio on Enrique Alcalde</title>
+    <title>Porfolio on Christopher Pintado</title>
     <link>https://cris-pintado.github.io/Porfolio1/</link>
-    <description>Recent content in My Data Science Porfolio on Enrique Alcalde</description>
+    <description>Recent content in my Porfolio on Christopher Pintado</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cris-pintado.github.io/Porfolio1/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Project 1: Plant Disease Estimator</title>
+      <title>Project 1: Analytical Review for Consolidating Habitat Mapping
+            Within Europe: Insights from Portugal, Spain, and France</title>
       <link>https://cris-pintado.github.io/Porfolio1/post/project_1/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cris-pintado.github.io/Porfolio1/post/project_1/</guid>
-      <description>Leaf_disease_estimator See full code here.
-An App to estimate leaf spot disease scores on cereals 🌾   Description: The goal of this project was to use CNNs to predict the disease rating, from an input image.
-  Introduction: Plant diseases have long been one of the major threats to food security because they dramatically reduce the crop yield and compromises its quality. Accurate and precise estimation of the disease level has been a difficult challenge.</description>
+      <description>This paper addresses the challenges of standardizing habitat classification across three conterminous European countries by presenting a comparative analysis of habitat data for Portugal, Spain and
+France with focus on the cross-border regions between these countries. By developing a prototype of harmonized regional
+legends according to Annex 1 of the Habitats Directive codes using a three-step approach involving data compilation,
+adaptability with GIS software like QGIS and MiraMon, and legend unification. This master's dissertation contributes to the InCASE project -In Situ
+showcase Supporting Climate and Environmental Monitoring
+in Europe- funded by the European Commission in support
+to the European Environmental Agency (EEA) and the
+Copernicus InSitu Component </description>
     </item>
     
     <item>
