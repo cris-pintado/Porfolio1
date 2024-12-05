@@ -205,145 +205,171 @@ conterminous European countries.
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="leaf_disease_estimator">Leaf_disease_estimator</h1>
-<p><strong><a href="https://cris-pintado.github.io/Porfolio1/image/TFM_9-1-2024.pdf">See full article here</a></strong>.</p>
-<h2 id="an-app-to-estimate-leaf-spot-disease-scores-on-cereals-"><strong>An App to estimate leaf spot disease scores on cereals 🌾</strong></h2>
-<ul>
-<li>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"> <!--for dark/big letters-->
+<p><strong><a href="https://cris-pintado.github.io/Porfolio1/images/TFM_9-1-2024.pdf"> See full article here</a></strong>.</p>
+<h2 id="an-app-to-estimate-leaf-spot-disease-scores-on-cereals-"><strong>Abstract </strong></h2>
 <!--Describir un poco de los producido-->
-<p><strong>Description</strong>: The goal of this project was to use CNNs to predict the disease rating, from an input image.</p>
-</li>
-<li>
-<p><strong>Introduction</strong>: Plant diseases have long been one of the major threats to food security because they dramatically reduce the crop yield and compromises its quality. Accurate and precise estimation of the disease level has been a difficult challenge. Nonetheless, over the last years, the depelopment of deep learning approaches and in particular of CNNs, has brought significant progress to the automatic estimation of crop disease levels. These advances in image processing will definetely benefit the <strong>decission making</strong> process for farmers and they will pave the way towards more sustainable agro-systems 🔄. Furthermore, such automatized phenotypic tools will play an important role in the <strong>crop improvement programs</strong> where plant phenotyping has largely been the most labour-intensive part of the process.</p>
-</li>
-<li>
-<p><strong>Challenges</strong>. There are two <strong>main issues</strong> that remain with the use of CNNs:</p>
-<ul>
-<li>
-<p>Require <strong>large datasets</strong>.</p>
-</li>
-<li>
-<p>Database construction can be <strong>labour intensive</strong> (all pictures need to be properly labeled with the correct disease).</p>
-<blockquote>
-<p>Hence, there is an increasing interest in developing well-performing models by using <strong>small picture datasets</strong>.</p>
-</blockquote>
-<blockquote>
-<p>In this project I will use a very small picture dataset (144 pictures total) and try to overcome the issues associated.</p>
-</blockquote>
-</li>
-</ul>
+<p>Habitat mapping plays a significant role for biodiversity conservation and environmental policy implementation. However,
+  even with progress over the years in this field, there is still the need to make classification systems comparable across
+  countries for harmonized maps at European scale. This paper addresses the challenges of standardizing habitat classification
+  across three conterminous European countries by presenting a comparative analysis of habitat data for Portugal, Spain and
+  France with focus on the cross-border regions between these countries. We have developed a prototype of harmonized regional
+  legends according to Annex 1 of the Habitats Directive codes using a three-step approach involving data compilation,
+  adaptability with GIS software like QGIS and MiraMon, and legend unification. Our work consists of two methodologies that
+  either incorporate a Sites of Community Importance (SCI), or habitat displayed approach based on their data’s relevant value.
+  Diverse datasets have been integrated into coherent habitat maps, despite challenges related to data accessibility and opposing
+  standardizations formats across countries. The results demonstrate improved processes in development and adaptation for
+  unified habitat mapping, also emphasizing the need for improved data sharing and cooperation among institutions for better
+  results. This study contributes to the broader goal of standardized habitat mapping across Europe, providing a framework that
+  can be expanded and refined to include broader horizons.</p>
+
+  <ul>
+    <li>
+    <p>Key words: Habitat mapping, Europe, Annex 1 of HD, EUNIS, GIS </p>
+    </li>
+  </ul>
 </li>
 </ul>
-<h3 id="code-and-resources-used">Code and Resources Used</h3>
-<ul>
-<li>
-<p><strong>Python Version</strong>: 3.7</p>
-</li>
-<li>
-<p><strong>Packages</strong>: pandas (1.1.3), numpy (1.19.5), sklearn (0.24.1), os, glob, scipy (1.6.0), matplotlib (3.3.4), plotly (4.14.3), streamlit (0.79.0), PIL, cv2 (4.4.0), pickle, keras (2.4.0).</p>
+
+<p><strong>Introduction:</strong>Habitats are the natural environments where organisms
+  reside, characterized by interactions between living
+  organisms (biotic components) and their surrounding physical
+  conditions (abiotic components). Accurate habitat mapping
+  illustrates the spatial distribution of different habitats within a
+  specific region, is a fundamental tool in environmental policy
+  and biodiversity conservation efforts. These maps are pivotal
+  for developing, implementing, and monitoring biodiversity
+  conservation strategies, such as the European Union’s
+  Biodiversity Strategy for 2030 and the Nature Restoration
+  Law.</p>
+
+<p>This paper attempts to tackle this challenge by presenting a
+comparative study approach, of three selected conterminous
+European countries habitat maps, being that of Spain
+(Catalunya) with France (Languedoc-Roussillon), and
+Portugal (Beja & Faro) with Spain (Andalusia), with the aim
+to harmonize each regional legend according to Annex I of
+HD and/or the EUNIS habitat codes.
+</p>
 </li>
 </ul>
 <h2 id="schema-of-the-approach">Schema of the approach:</h2>
-<p><strong>1. Review the literature</strong> 📚:</p>
-<p><strong>2. Inspect the target variable and the picture dataset</strong> 🖼📊:</p>
-<p><strong>3. Choose an approach for our given problem 🎯</strong>:</p>
-<p>It is a good idea to start from a simple approach and improve it from there.</p>
-<p><strong>4. Resize pictures, split the dataset and use data augmentation</strong>:</p>
-<p><strong>5. Adapting the Inception_V3 Architecture for our regression problem</strong>:</p>
-<p><strong>6. Propose possible improvements</strong>:</p>
-<p><strong>7. Leaf segmentation</strong>:</p>
-<p><strong>8. Model Deployment</strong></p>
-<hr>
-<h2 id="1-review-of-the-literature">1. Review of the literature</h2>
-<p>Before jumping into coding, it is important to find out what other image-based methods have been used for similar tasks as the one presented here.
-This is key to choose a good approach for our particular problem.</p>
-<ul>
-<li>
-<p>Leaf spot diseases result in different leaf symptoms which include <a href="https://www.ag.ndsu.edu/publications/crops/fungal-leaf-spot-diseases-of-wheat-tan-spot-septoria-stagonospora-nodorum-blotch-and-septoria-tritici-blotch">necrotic and spot-like leaf lessions</a>.</p>
-</li>
-<li>
-<p>The problem plant disease recognition has been historically based on conventional machine learning techniques such as Support Vector Machines, Multilayer Perceptron Neural Networks and Decision Trees. However, the prevailing approach has shifted to the application of deep learning concepts, with focus on <strong>Convolutional Neural Networks (CNNs)</strong> [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0168169918304617">Reference 2018</a>], [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6413718/">Reference 2019</a>], <a href="https://link.springer.com/article/10.1007/s41870-020-00437-5">Reference 2020</a>].</p>
-</li>
-<li>
-<p>CNNs have been used multiple times for <strong>regression</strong> [<a href="https://plantmethods.biomedcentral.com/articles/10.1186/s13007-020-00698-y">Reference 2020</a>], but some considerations need to be made for a regression use case.</p>
-<ul>
-<li>We need to ensure that your final fully connected layer uses a linear activation function instead of sigmoid.</li>
-<li>There have been studies that showed a better model performance using a classification-then-regression trick: A first network only determines if y should be in one of, say, 10 bins. A second network then performs the regression task [<a href="https://lmb.informatik.uni-freiburg.de/Publications/2015/FDB15/image_orientation.pdf">Reference 2015</a>].</li>
-</ul>
-</li>
-<li>
-<p>There have been a number of <strong>interesting approaches</strong> to tackle the issue with dealing with small picture datasets which include:</p>
-<ul>
-<li>CNN (InceptionV3 and AlexNet) for feature extraction followed by SVM for classification [<a href="https://www.researchgate.net/publication/334743331_RICE_PLANT_DISEASE_CLASSIFICATION_USING_TRANSFER_LEARNING_OF_DEEP_CONVOLUTION_NEURAL_NETWORK">Reference (2019)</a>], [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0168169920302544">Reference (2020)</a>].</li>
-<li>Siamese Networks (InceptionV3) [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0168169920302544">Ref 2020</a>]</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="2-inspect-the-target-variable-severity-of-infection-and-the-picture-dataset">2. Inspect the target variable (severity of infection) and the picture dataset.</h2>
-<ul>
-<li>As we can observe in the plot below, we will be dealing with a <strong>challenging dataset</strong>, not only due to its small size, but also the apparent class imbalance.</li>
-</ul>
+
+<p>The experiment presents a framework for reclassifying
+  distinctive natural habitats across four different regions in
+  three countries. Reclassification is achieved through the
+  homogeneous harmonization of legends and metadata. A
+  three-step approach was developed to accomplish it. </p>
+
 <figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/target_variable.png"/> 
+    <img src="https://cris-pintado.github.io/Porfolio1/images/TFM_Scheme.png"/> 
+</figure>
+
+
+<hr>
+<h2 id="Data Collection and Metadata Documentation">1. Data Collection and Metadata Documentation</h2>
+<p>The crucial aspect of this study was the recompilation of data.
+  The process of obtaining this data presented several
+  challenges, including linguistic differences, varied data
+  formats, and issues related to institutional ownership and
+  public accessibility versus intellectual property.</p>
+
+  <p> To address
+    these challenges, we have developed a standard format of
+    documentation in which different data sets were collected and
+    evaluated. The FAIR Guiding Principles for scientific data management
+    and stewardship are designed to improve the supporting
+    structure of data documentation, by emphasizing on making
+    data Findable, Accessible, Interoperable, and Reusable.</p>
+
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Catalunya and Languedoc–Roussillon habitat map harmonization">Catalunya and Languedoc–Roussillon habitat map harmonization</h2>
+
+<p>The general process of unifying distinctive attribute
+  tables resulting in our harmonized map, consisted of our
+  efforts to identifying 4 key template fields that could be
+  associated for both available data: habitat code in
+  correspondence with the Annex 1 of HD, habitat name, and
+  size. The key factor in implementation of this methodology is
+  the priority to include habitat coverage estimation, which
+  relies on our principle of data reliability when comparing
+  multi polygon sites that might enclose in one or more habitats.
+  This allows the reader on top of being able to view the habitat
+  name and code, easily identify the predominant value enclose
+  in each multi polygon site for each location. </p>
+
+<figure>
+    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/CATandFR_table of atributes.png"/> 
 </figure>
 
 <ul>
-<li>Inspecting the picture dataset we can see that these are rectangular pictures with a <strong>ratio of 1.33 and a size of 1390 x 1038 pixels</strong>.</li>
+<li>Attributes table of Catalunya dataset had to be
+  adjusted to reflect the desired structure for reclassification of
+  site codes to habitat code.</li>
 </ul>
-<h2 id="hahahugoshortcode-s1-hbhb"><figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/inspecting.png"/> 
-</figure>
+<ul>
+  <li>France
+    dataset pertain to a different set of table function thus a priority to protected sites representation has
+    been given based on the quality of the data available.</li>
+  </ul>
+<ul>
+    <li> If we had
+      presented the map to represent habitat code (instead of
+      protected sites), the different habitats within a protected site
+      could be listed but not spatially represented due to lack of
+      information of the exact limits of each habitat within a site,
+      which could be considered as an inaccuracy</li>
+    </ul>
 </h2>
-<h2 id="3-choose-an-approach-for-our-given-problem-">3. Choose an approach for our given problem 🎯:</h2>
-<ul>
-<li>An important aspect to consider is the <strong>image size and aspect ratio</strong>:</li>
-</ul>
-<p>It is important to note that tradititonal <strong>CNNs are not scale-invariant</strong>, hence, we should re-scale the images to an <strong>square format</strong>. There are three main approaches for this:</p>
-<p><em>Note: Another option would be to make our own network architecture taking image features into account by using asymmetric pooling and convolutions</em></p>
-<blockquote>
-<ol>
-<li><strong>Padding the image with 0s</strong>: This approach is not the most recommended, specially having large picture size such in our particular case. <a href="https://datascience.stackexchange.com/questions/30819/image-resizing-and-padding-for-cnn">Read here</a> and <a href="https://stackoverflow.com/questions/47697622/cnn-image-resizing-vs-padding-keeping-aspect-ratio-or-not/49882055#49882055">here</a>.</li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="2">
-<li><strong>Resize the pictures with out preserving the aspect ratio</strong> (no cropping involved).</li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="3">
-<li><strong>Crop down the picture to preserve the aspect ratio of the picture</strong>. This allows us to maintain a consistent aspect ratio, which helps the CNN to learn more discriminative, consistent features, but potentially loosing information after the cropping process.</li>
-</ol>
-</blockquote>
-<p>The third approach could be detrimental because there may be a direct association between larger leaves and disease severity. Hence, for our use case, the second approach should be preferred.</p>
-<ul>
-<li>My approaches will rely on <strong>four main strategies</strong> thave been shown to be very effective when faced with <strong>small picture datasets</strong>:</li>
-</ul>
-<blockquote>
-<ol>
-<li><strong>Data Augmentation</strong>: used to generate new training samples from the original ones by applying random modifications and perturbations such that the classes labels are not changed.</li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="2">
-<li><strong>Transfer Learning by placing a new set of FC layers on top of the CNN</strong>, and then fine-tuning these weights.</li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="3">
-<li><strong>Cross-Validation</strong></li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="4">
-<li><strong>Transfer Learning by treating networks as arbitrary feature extractors</strong>.</li>
-</ol>
-</blockquote>
-<ul>
-<li>Finally, is also worth noticing that our dataset is somewhat similar to a famous benchmark dataset extensively used in a <strong>Leaf Segmentation Challenge (LSC)</strong> from the Computer Vision Problems in Plant Phenotyping platform (<strong><a href="https://www.plant-phenotyping.org/CVPPP2020">CVPPP</a></strong>). Similarly, all images are taken from the top and have uniform backgrounds.
-Hence, a transfer learning approach could be also used taking advantage of one of the state of the art models trained on the CVPPP dataset (i.e. <strong><a href="https://github.com/csiro-robotics/UPGen">Mask R-CNN</a></strong>). For this, we should have segmented versions of our pictures. A possibility that I mention in the last section (possible improvements).</li>
-</ul>
+<figure>
+  <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/Close_look_CatFR.jpg"/> 
+</figure>
+
+<h2 id="Faro and Andalusia habitat map harmonization">Faro and Andalusia habitat map harmonization</h2>
+<p>The methodology follows our general approach
+  of identifying and encapsulating 4 key template fields that
+  could be associated with both available data. We focus on a
+  design for the result map that prioritize the predominant
+  habitat in each polygon site, as seen by the geometrical
+  polygon site containing less than 3 habitats and seen by their
+  compatible dimension between both tables (Faro and
+  Andalusia). Additionally, our distinctive key factor unique to
+  the methodology pertaining to area of Faro and Andalusia is
+  our effort of harmonization that relies on the decision to
+  incorporate the habitat code to their exact habitat name as to
+  enrich the semantic understanding of complex attributes,
+  which improves the interoperability of the data in respect of
+  the original dataset.</p>
+
+
+  <figure>
+    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/CLoser look_Faro_SPA.jpg"/> 
+  </figure>
+
+  <ul>
+    <li>A selective process of narrowing down the data begin by
+      selecting a zone of 25 x 15 km since the amount of polygons
+      was higher than one would have expected in the case of
+      reclassifying and modifying attribute tables for each layer.</li>
+    </ul>
+    <ul>
+      <li>Approach for displacement determined by its
+        habitat to be the best approach in comparison to habitat map
+        created for Catalunya and France which prioritize their site
+        codes over the legend</li>
+      </ul>
+    <ul>
+        <li> Attribute table of Andalusia did not contain the name for
+          which their habitat of their polygon pertained, and for a
+          proper implementation of the data it became crucial to
+          include that set of information in the overall map.</li>
+        </ul>
+  <figure>
+   <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/table_attributes_Faro_SP.jpg"/> 
+  </figure>
 <hr>
 <h2 id="4-resize-pictures-and-use-data-augmentation">4. Resize pictures and use data augmentation.</h2>
 <ul>
