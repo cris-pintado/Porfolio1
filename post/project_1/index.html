@@ -65,7 +65,7 @@ conterminous European countries."/>
 
   
   
-  <header class="cover bg-top" style="background-image: url('https://cris-pintado.github.io/Porfolio1/images/Project_1/inspecting.png');">
+  <header class="cover bg-top" style="background-image: url('https://cris-pintado.github.io/Porfolio1/images/Project_1/P1_cover_foto.png');">
     <div class="pb3-m pb6-l bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -371,189 +371,59 @@ HD and/or the EUNIS habitat codes.
    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/CLoser look_Faro_SPA.jpg"/> 
   </figure>
 <hr>
-<h2 id="4-resize-pictures-and-use-data-augmentation">4. Resize pictures and use data augmentation.</h2>
-<ul>
-<li>Data Split: Stratified data split was performed to preserve equal distribution of disease severity accross sets.
-*Note: <code>MinMaxScaler</code> was used after splitting to scale the target variable between 0 and 1.</li>
-</ul>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/stratified_split.png"/> 
-</figure>
+<h2 id="Results"> Results</h2>
 
-<ul>
-<li>Data Augmentation: Rotation, vertical and horizontal flippling were used in this case to enhance the train set.</li>
-</ul>
+<p>Two harmonized habitat maps have been produced: one for
+  the “Catalunya & Languedoc-Roussillon regions” based on
+  SCI Approach, and other one for the “Faro and
+  Andalusia” regions. These maps incorporate an identifier for their national habitat but
+  also contains their full habitat name, Annex 1 codes, and also
+  a representation of their habitat in terms of hectare (ha). All under a unified coordinated reference system,
+  scale, and legend. 
+  <p>
 <figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/data_augmentation.png"/> 
+ <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/FinalCATFR.png"/> 
 </figure>
-
-<hr>
-<h2 id="5-approach-adapting-the-inception_v3-architecture-for-our-regression-problem">5. Approach: Adapting the Inception_V3 Architecture for our regression problem.</h2>
-<ul>
-<li><strong>Tranfer learning</strong>: We will exclude the last two layers of the inception_v3 model and include our <code>GlobalAveragePooling2D</code>, <code>Dense</code>, <code>BatchNormalization</code>, <code>Dropout</code> and most importantly a last dense layer with a <code>linear</code> activation fuction to perform the regression.</li>
-</ul>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/Inception_v3.png"/> 
-</figure>
-
-<blockquote>
-<ol>
-<li>Train the network with a learning rate of 0.001 with all inception_v3 layers trained in the imagenet dataset frozen.</li>
-<li>Unfreeze all layers and fine tune the model with a learning rate = 0.00001.</li>
-</ol>
-</blockquote>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/Training_raw_scaler.png"/> 
-</figure>
-
-<ul>
-<li><strong>Model Evaluation</strong>:</li>
-</ul>
-<p>Mean absolute error(mae) and mean squared error(mse) were used as evaluation metrics. As loss function mse was used to penalize more the large errors.</p>
-<pre><code>  Final model -&gt; mae:  0.06, mse:  0.22, loss:  0.06
-</code></pre>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/pred_vs_truth.png"/> 
-</figure>
-
-<hr>
-<h2 id="6-possible-improvements">6. Possible Improvements</h2>
-<ul>
-<li>
-<p><strong>A)</strong> One of the possible set of improvements that can bring a better performance over the first approach is to use one or several of the following techniques to deal <strong>data imbalance</strong>:</p>
-<ul>
-<li>
-<p><strong>Oversampling</strong>: Increasing the number of pictures for the under-represented disease levels. Data augmentation techniques can also be of use here. [<a href="https://towardsdatascience.com/deep-learning-unbalanced-training-data-solve-it-like-this-6c528e9efea6">Reference</a>].</p>
-</li>
-<li>
-<p><strong>Synthetic Minority Over-sampling Technique(SMOTE)</strong>. This would require to increase the number of samples for the minority classes. <a href="https://github.com/scikit-learn-contrib/imbalanced-learn/issues/27">See github issue</a></p>
-</li>
-<li>
-<p><strong>Adjust the weights</strong> to the classess.</p>
-</li>
-<li>
-<p><strong>Define our custom loss-function</strong>.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>B) Increase the picture dataset</strong>:</p>
-<ul>
-<li>
-<p>As suggested above, improving the number of labeled pictures (in particular for the minority disease score), would help us to improve the model&rsquo;s performance further.</p>
-</li>
-<li>
-<p>Furthermore, it would be interesting to complement the pictures taken from above with <strong>side pictures</strong> of the plants.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>C)</strong> Try other <strong>image-preprocessing methods</strong>:</p>
-<ul>
-<li>
-<p><strong>Background-removal</strong></p>
-</li>
-<li>
-<p><strong>Semantic segmentation</strong></p>
-</li>
-<li>
-<p><strong>Instance Segmentation</strong>:</p>
-<ul>
-<li>
-<ol>
-<li>Mask R-CNN: To automatically segment and construct pixel-wise masks for our pictures. For this we could use the <a href="https://github.com/matterport/Mask_RCNN">matterport repository</a>.</li>
-</ol>
-</li>
-<li>
-<ol start="2">
-<li>Perform transfer learning using a <a href="https://github.com/csiro-robotics/UPGen">state-of-the-art</a> model used for leaf phenotyping.</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>D)</strong> Perform <strong>cross-validation</strong> for hyper-parameter tunning.</p>
-</li>
-<li>
-<p><strong>E)</strong> <strong>Try other algorithms</strong></p>
-<ul>
-<li><strong>Other CNN architectures</strong>: i.e Xception, EfficientNetB7, Resnet&hellip;</li>
-<li><strong>Transformers</strong>: They represent a breakthrough in deep neural network architectures that has recently unlocked dramatic advances across many areas of AI, including <a href="https://arxiv.org/abs/2010.11929">computer vision</a>.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="7-leaf-segmentation">7. Leaf segmentation</h2>
-<p>In an attempt to improve the model performance I segmented the pictures using this <a href="https://github.com/YaredTaddese/leaf-image-segmentation">repository on github</a>.</p>
-<p><em>Note: In this case the pictures have a white background (only some debry is present in the background), so the effects of the segmentation may not have a large effect on the model performance</em></p>
-<p>See below an example of segmented images:</p>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/inspecting_segmented.png"/> 
-</figure>
-
-<p>When we compare the training using segmented and the original rgb pictures we see a quicker drop on the <code>val_loss</code> (mse), which may be the result of a more focused training on the leaf-related features, which we expect to be associated to disease severity.</p>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/rgb_vs_segmented.png"/> 
-</figure>
-
-<hr>
-<h2 id="8-oversampling-of-the-minority-classes-with-data-augmentation">8. Oversampling of the minority classes with data augmentation</h2>
-<p>In this section I will use data augmentation to oversample the minority classes. For this I will create a train, val and test folders, and apply data augmentation on the train and val sets.</p>
-<ul>
-<li>Label target variable distribution before data augmentation (train + val + test sets):</li>
-</ul>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/count_plot_before.png"/> 
-</figure>
-
-<ul>
-<li>Label target variable distribution after data augmentation (train + val sets):</li>
-</ul>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/count_plot_after.png"/> 
-</figure>
-
-<ul>
-<li>Target distribution on the three sets:</li>
-</ul>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/stratified_split_aug.png"/> 
-</figure>
-
-<ul>
-<li>Model training:</li>
-</ul>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/Training_marked_seg_aug.png"/> 
-</figure>
-
-<ul>
-<li>Model evaluation:</li>
-</ul>
-<p>Mean absolute error(mae) and mean squared error(mse) were used as evaluation metrics. As loss function mse was used to penalize more the large errors.</p>
-<pre><code>  Final model -&gt; mae:  0.14, mse:  0.33, loss:  0.14
-</code></pre>
-<p>In the plot below the predicted values for the test set are ploted against the truth values. The red line represents the perfect prediction, whereas the purple line is the trend line (r<!-- raw HTML omitted -->2<!-- raw HTML omitted -->=0.08)</p>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/pred_vs_truth_aug.png"/> 
-</figure>
-
-<p>We can see that we did not improve model&rsquo;s performance on the test set by oversampling the train and val sets using data augmentation on the minority classes.
-Indeed, we can expect the model to generalize better accross disease levels, but since the test set is unevenly distributed, performance is hurt.</p>
-<hr>
-<h2 id="9-model-deployment">9. Model Deployment</h2>
-<p>An app was built locally with the <a href="https://streamlit.io/">Streamlit</a> package and deployed it using the <a href="https://dashboard.heroku.com/apps">Heroku</a> framework.</p>
-<p>See below couple of screenshots of the app:</p>
-<figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/Screenshot_1.png"/> 
-</figure>
+<p> The resulting habitat maps illustrate our two
+  distinctive approaches of classification, France and Catalunya
+  are design by incorporating enclose habitats under both SCI
+  and HCI site ID’s. In comparison Faro and Andalusia are
+  developed under a unified integration model that is classified
+  under the predominant values based on adaptable data. Both
+  map’s precise habitats can be viewed under an observative
+  search of their attributes. </p>
 
 <figure>
-    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/Screenshot_2.png"/> 
+    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_1/FinalPR&SPA.png"/> 
 </figure>
 
+
+<h2 id="Conclusion">Conclusion</h2>
+
+<p> This study presents a feasible approach for harmonizing
+  habitat maps across different European regions based on
+  publicly accessible geographical data. By comparing and
+  reclassifying habitat data from Faro, Andalusia-Huelva,
+  Catalunya, and Languedoc-Roussillon regions, we have
+  created unified maps that align with Annex 1 of the Habitats
+  Directive codes. 
+   </p>
+<p> Our methodology has demonstrated a significant integrational
+  result for diverse data sets into a coherent habitat map,
+  overcoming challenges related to linguistic differences,
+  varied data formats, lack of meaning and institutional barriers. 
+   </p>
+<p>We presented an in-depth analysis behind all available data
+  sets in each of the 4 regional regions. Various implementation
+  approaches have been made to adapt said data to reflect a
+  cross bilateral homogenize relation between European
+  boundaries for each conterminous region, and how that
+  approach differ to each other. We aim to provide a small
+  glimpse of a standardized habitat classification, to provide a
+  clue on expanding this harmonization approach to include
+  more regions and refine the methodologies for data
+  integration. 
+  </p>
 <hr>
 <ul class="pa0">
   
@@ -567,8 +437,6 @@ Indeed, we can expect the model to generalize better accross disease levels, but
     <aside class="w-30-l mt6-l">
 
 
-
-
 </aside>
 
   </article>
@@ -580,10 +448,6 @@ Indeed, we can expect the model to generalize better accross disease levels, but
     &copy;  Christopher Pintado 2024 
   </a>
     <div>
-
-
-
-
 
 
 
@@ -607,11 +471,6 @@ Indeed, we can expect the model to generalize better accross disease levels, but
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
-
-
-
-
-
 
 
 </div>
