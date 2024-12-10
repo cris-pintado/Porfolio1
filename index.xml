@@ -8,16 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cris-pintado.github.io/Porfolio1/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Project 1: Analytical Review for Consolidating Habitat Mapping
+      <title>Analytical Review for Consolidating Habitat Mapping
             Within Europe: Insights from Portugal, Spain, and France</title>
       <link>https://cris-pintado.github.io/Porfolio1/post/project_1/</link>
-      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate> September 2024 00:00:00 +0000</pubDate>
       
       <guid>https://cris-pintado.github.io/Porfolio1/post/project_1/</guid>
       <description>This paper addresses the challenges of standardizing habitat classification across three conterminous European countries by presenting a comparative analysis of habitat data for Portugal, Spain and
-France with focus on the cross-border regions between these countries. By developing a prototype of harmonized regional
-legends according to Annex 1 of the Habitats Directive codes using a three-step approach involving data compilation,
-adaptability with GIS software like QGIS and MiraMon, and legend unification. This master's dissertation contributes to the InCASE project -In Situ
+France with focus on the cross-border regions between these countries. This master's dissertation contributes to the InCASE project -In Situ
 showcase Supporting Climate and Environmental Monitoring
 in Europe- funded by the European Commission in support
 to the European Environmental Agency (EEA) and the
@@ -25,24 +23,28 @@ Copernicus InSitu Component </description>
     </item>
     
     <item>
-      <title>Project 2: Mushroom Recognition Classifier using CNNs</title>
+      <title>Experimental Approaches for Geometric Correction</title>
       <link>https://cris-pintado.github.io/Porfolio1/post/project_2/</link>
-      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>January 2024 00:00:00 +0000</pubDate>
       
       <guid>https://cris-pintado.github.io/Porfolio1/post/project_2/</guid>
-      <description>Goal of the project: To create a tool able to classify mushrooms from pictures.
-Introduction: Mushrooms represent an important food source and they are used extensively in cooking 🍄👨🏼‍🍳, in many cuisines (notably Chinese, Korean, European, and Japanese). Furthermore, many people enjoy mushroom collection as a outdoor activity. However, this activity, entails some health risk, since some species that are poisoness look similar to edible specimens. In the example below I present such case of similarity between a delicious and edible mushroom Macrolepiota mastoidea and a Amanita phaloides which ingestion can lead to death 💀.</description>
+      <description>GoExperimental outlook for geometric correction of various remote imaging sources utilizing manual and automatics approach. This project tries to convey the procedure of geometric corrections of satellite images that are not
+            georeferenced directly, and are assigned arbitrary coordinate units of pixels, and converting them into a
+            desired georeferenced coordinate system, using both manual and automatic models.</description>
     </item>
     
     <item>
-      <title>Project 3: Gene Expression Analyses in Arabidopsis Using Machine Learning/ Deep Learning</title>
+      <title>Radiometric Image Correction</title>
       <link>https://cris-pintado.github.io/Porfolio1/post/project_3/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate> January 2024 00:00:00 +0000</pubDate>
       
       <guid>https://cris-pintado.github.io/Porfolio1/post/project_3/</guid>
-      <description>Framing the problem:   The unequal utilization of synonymous codons (CUB) affects numerous cellular processes i.e. translation rates, protein folding and mRNA degradation [Ref].
-  The use of synonymous codons in the gene coding regions are not random, and CUB is an essential feature of most genomes, which has been reported to have an strong impact on the transcription levels of genes [Ref] 🔬📚🔠.
-  Since codons within a synonymous codon group are translated at different rates, many computational translation models rely on analyzing synonymous codons.</description>
+      <description>Having geometrically referenced images poses challenges, including atmospheric
+  conditions, varied illumination due to solar position at acquisition time, and reliefinduced shadows. These factors deviate from the desired traits for remote sensing. This
+  endeavor aims to outline the procedures involved in acquiring and radiometrically
+  correcting satellite orthoimages, like Landsat-5 TM, utilizing both manual and automatic
+  applications. The goal of radiometric correction is to transform digital sensor values into
+  meaningful physical quantities, such as reflectance.</description>
     </item>
     
     <item>
