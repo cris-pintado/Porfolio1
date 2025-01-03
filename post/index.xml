@@ -68,9 +68,16 @@ Copernicus InSitu Component.</description>
       <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://cris-pintado.github.io/Porfolio1/post/project_6/</guid>
-      <description>Description:As an aspiring GIS professional, HTML development has become an essential tool in my skill set, enabling me to create structured, interactive, and visually engaging web pages. My focus lies in crafting clean and semantic HTML5 code that ensures both functionality and accessibility..</description>
+      <description>Description:As an aspiring GIS professional, HTML development has become an essential tool in my skill set, enabling me to create structured, interactive, and visually engaging web pages. My focus lies in crafting clean and semantic HTML5 code that ensures both functionality and accessibility.</description>
     </item>
-    
+    <item>
+      <title>Flood AnalysIs For Specific Time/Zone Utilizing GEE and Deployed As An HTML Study  </title>
+      <link>https://cris-pintado.github.io/Porfolio1/post/project_7/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cris-pintado.github.io/Porfolio1/post/project_7/</guid>
+      <description>Description:For the event of the day 2017-03-15 for the Guanipa River sub-basin in Freites Municipality, Anzoátegui, Venezuela. A flood analysis is conducted to determine affected areas, aided by Sentinel -1 satellite images, developed under Google Earth Engine and visualize under a HTML. </description>
+    </item>
  
     
   </channel>
