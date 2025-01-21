@@ -203,9 +203,18 @@
 
 <h2 id="Integrating Gee and HTML">Integrating GEE and HTML</h2>
 
-<p><strong><a href="https://code.earthengine.google.com/80cc67acc599f3258866f0983a92295c"> See full GEE code here</a></strong>.</p>
+<p><strong><a href="https://code.earthengine.google.com/7d090f768cdf5ffea1d5439cc892f451"> See full GEE code here</a></strong>.</p>
 
 <P>Flooding is a critical global challenge, and accurate analysis is essential for mitigation and planning. Using Google Earth Engine (GEE), this project demonstrates a robust method for flood detection and visualization in a specified region, including its transformation into web-ready layers.</P>
+
+
+<iframe 
+src="https://cris-pintado.github.io/VZvisor/" 
+width="100%" 
+height="500px" 
+style="border:none;">
+</iframe>
+
 
 <p><Strong>Geometry and Satellite Data Processing</Strong> </p>
 
@@ -234,12 +243,37 @@
 
 <P>This approach highlights the potential of GEE in addressing real-world challenges with scalable, accessible, and actionable solutions.</P>
 
-        <iframe 
-        src="https://cris-pintado.github.io/VZvisor/" 
-        width="100%" 
-        height="500px" 
-        style="border:none;">
-    </iframe>
+<P><strong>Impact on Croplands</strong></P>
+
+<p>The CGLS Land Cover dataset identifies cropland areas affected by flooding. The affected cropland area is calculated in hectares, providing valuable data for agricultural impact assessment.</p>
+
+<P><strong>Combining Layers for Flood Risk Zones</strong></P>
+
+<p>Flood risk zones are mapped by integrating:</p>
+
+<ul>
+  <li>
+    <p>Floodable areas based on normalized flow accumulation.</p> 
+  </li>
+  <li>
+    <p>Water bodies with a threshold occurrence.</p>
+  </li>
+  <li>
+    <p>Low-lying areas below 10 meters above sea level.</p>
+  </li>
+  </ul>
+
+  <P><strong>Critical Infrastructure Mapping</strong></P>
+
+  <p>Feature collections are used to overlay essential infrastructure:</p>
+  <ul>
+    <li>
+      <p><strong>Roads, airports, hospitals, fire stations, police stations, and schools</strong> are filtered and visualized.</p> 
+    </li>
+   
+    </ul>
+
+
 
         
 
