@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Christopher Pintado</title>
+    <link>https://cris-pintado.github.io/Porfolio1/post/</link>
+    <description>Recent content in Projects on Christopher Pintado</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://cris-pintado.github.io/Porfolio1/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 1: Analytical Review for Consolidating Habitat Mapping
+      Within Europe: Insights from Portugal, Spain, and France</title>
+      <link>https://cris-pintado.github.io/Porfolio1/post/project_1/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cris-pintado.github.io/Porfolio1/post/project_1/</guid>
+      <description>This paper addresses the challenges of standardizing habitat classification across three conterminous European countries by presenting a comparative analysis of habitat data for Portugal, Spain and
+France with focus on the cross-border regions between these countries. By developing a prototype of harmonized regional
+legends according to Annex 1 of the Habitats Directive codes using a three-step approach involving data compilation,
+adaptability with GIS software like QGIS and MiraMon, and legend unification. This master's dissertation contributes to the InCASE project -In Situ
+showcase Supporting Climate and Environmental Monitoring
+in Europe- funded by the European Commission in support
+to the European Environmental Agency (EEA) and the
+Copernicus InSitu Component.</description>
+    </item>
+    
+    <item>
+      <title>Project 2: Experimental Approaches for Geometric Correction</title>
+      <link>https://cris-pintado.github.io/Porfolio1/post/project_2/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cris-pintado.github.io/Porfolio1/post/project_2/</guid>
+      <description>Experimental outlook for geometric correction of various remote imaging sources utilizing manual and automatics approach.</description>
+    </item>
+     <item>
+      <title>Flood AnalysIs For Specific Time/Zone Utilizing GEE and Deployed As An HTML Study  </title>
+      <link>https://cris-pintado.github.io/Porfolio1/post/project_7/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cris-pintado.github.io/Porfolio1/post/project_7/</guid>
+      <description>Description:For the event of the day 2017-03-15 for the Guanipa River sub-basin in Freites Municipality, Anzoátegui, Venezuela. A flood analysis is conducted to determine affected areas, aided by Sentinel -1 satellite images, developed under Google Earth Engine and visualize under a HTML. </description>
+    </item>
+    <item>
+      <title>Project 3: Gene Expression Analyses in Arabidopsis Using Machine Learning/ Deep Learning</title>
+      <link>https://cris-pintado.github.io/Porfolio1/post/project_3/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cris-pintado.github.io/Porfolio1/post/project_3/</guid>
+      <description>Framing the problem:   The unequal utilization of synonymous codons (CUB) affects numerous cellular processes i.e. translation rates, protein folding and mRNA degradation [Ref].
+  The use of synonymous codons in the gene coding regions are not random, and CUB is an essential feature of most genomes, which has been reported to have an strong impact on the transcription levels of genes [Ref] 🔬📚🔠.
+  Since codons within a synonymous codon group are translated at different rates, many computational translation models rely on analyzing synonymous codons.</description>
+    </item>
+    
+    <item>
+      <title>Project 4: Experimental Display of Fotointerpretation </title>
+      <link>https://cris-pintado.github.io/Porfolio1/post/project_4/</link>
+      <pubDate>February 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://cris-pintado.github.io/Porfolio1/post/project_4/</guid>
+      <description>Photointerpretation and digitization of coverage of the interior of the boundary marked by the FincaL.POL vector on the OrtoWMS.jpg image.</description>
+    </item>
+    
+    <item>
+      <title>Mastering SQL: Building a Foundation Through Practice</title>
+      <link>https://cris-pintado.github.io/Porfolio1/post/project_5/</link>
+      <pubDate>March 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://cris-pintado.github.io/Porfolio1/post/project_5/</guid>
+      <description>Description: Mastering SQL: I’ve developed a solid foundation in SQL through hands-on practice, focusing on database design, query optimization, and data analysis with tools like MiraBosc</description>
+    </item>
+    
+    <item>
+      <title>Building Interactive Web Pages with HTML: My Journey</title>
+      <link>https://cris-pintado.github.io/Porfolio1/post/project_6/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cris-pintado.github.io/Porfolio1/post/project_6/</guid>
+      <description>Description:As an aspiring GIS professional, HTML development has become an essential tool in my skill set, enabling me to create structured, interactive, and visually engaging web pages. My focus lies in crafting clean and semantic HTML5 code that ensures both functionality and accessibility.</description>
+    </item>
+   
+ 
+    
+  </channel>
+</rss>

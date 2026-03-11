@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>  Experimental Approaches for Geometric Correction  | Christopher Pintado</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Experimental outlook for geometric correction of various remote imaging sources utilizing manual and automatics approach">
+    <meta name="generator" content="Hugo 0.76.5" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="https://cris-pintado.github.io/Porfolio1/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+
+    
+
+    
+    
+    <meta property="og:title" content="  Experimental Approaches for Geometric Correction" />
+<meta property="og:description" content="Experimental outlook for geometric correction of various remote imaging sources utilizing manual and automatics approach" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cris-pintado.github.io/Porfolio1/post/project_2/" />
+<meta property="article:published_time" content="2021-03-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-11T00:00:00+00:00" />
+<meta itemprop="name" content="  Experimental Approaches for Geometric Correction">
+<meta itemprop="description" content="Experimental outlook for geometric correction of various remote imaging sources utilizing manual and automatics approach">
+<meta itemprop="datePublished" content="2021-03-11T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-03-11T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1403">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="  Experimental Approaches for Geometric Correction"/>
+<meta name="twitter:description" content="Experimental outlook for geometric correction of various remote imaging sources utilizing manual and automatics approach"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://cris-pintado.github.io/Porfolio1/images/Project_2/Project2Correction_geometrica_.png');">
+    <div class="pb3-m pb6-l bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://cris-pintado.github.io/Porfolio1/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Christopher Pintado
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://cris-pintado.github.io/Porfolio1/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://cris-pintado.github.io/Porfolio1/contact/" title="Contact Information page">
+              Contact Information
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://cris-pintado.github.io/Porfolio1/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+<a href="https://www.linkedin.com/in/pintado1999/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/cris-pintado" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">  Experimental Approaches for Geometric Correction</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Experimental outlook for geometric correction of various remote imaging sources utilizing manual and automatics approach
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://cris-pintado.github.io/Porfolio1/post/project_2/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://cris-pintado.github.io/Porfolio1/post/project_2/&amp;text=Project%202:%20Mushroom%20Recognition%20Classifier%20using%20CNNs" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://cris-pintado.github.io/Porfolio1/post/project_2/&amp;title=Project%202:%20Mushroom%20Recognition%20Classifier%20using%20CNNs" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">  Experimental Approaches for Geometric Correction</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-03-11T00:00:00Z">January, 2024</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h4 id="goal-of-the-project">Goal of the project:</h4>
+<p>Experimental outlook for geometric correction of various remote imaging sources utilizing manual and automatics approach.</p>
+<h3 id="introduction">Introduction:</h3>
+
+<p>This project tries to convey the procedure of geometric corrections of satellite images that are not
+  georeferenced directly, and are assigned arbitrary coordinate units of pixels, and converting them into a
+  desired georeferenced coordinate system, using both manual and automatic models.</p>
+
+<h3 id="code-and-resources-used">Resources Used:</h3>
+
+<li>Landsat-5, Thematic Mapper, 7 channels, nominal resolution
+  120 m to 30 m. Date of recruitment: 05-15-1992. Center of scene (UTM in m):
+  X: 350133.218750 Y: 4624794.500000.</li> 
+<li>Orthophotos of the PNOA a
+  15 m and 30 m spatial resolution</li>   
+<li>Digital Elevation Model (30 m), created from
+  mosaic of the MDE of 5 m spatial resolution of the IGN </li>
+<li>Photographic images to be corrected (3 bands for RGB 24 bits, 1 band for
+  gray scale or para color con palette). Date: May 23, 1993. Format
+  IMG, scanned at 24 bits and taken with a focal length of 153.87 mm.</li>
+  <li>Digital image mapping: 4 orthophotos 1:5000 (ICC).</li>
+  <li> Digital Model of Elevations (45 m grid) that cover the scope of the photo
+    to georeference (ICC). Approximate year: 1991.</li>
+
+<p><strong>Software</strong>: MiraMon GIS&RS v9.1a </p>
+
+<h2 id="Methodology process of correction">Methodology process of correction </h2>
+<p>Manual correction was done to the Landsat-5 images, Thematic Mapper, 7 bands, nominal resolution of
+  120m to 30m taken on 15-05-1992. The correction of image was conducted through the placement of
+  check points, control points, and tie point, sourced from a various cartographic references including an
+  orthophoto from the PNOA with resolution of 15m/30m, a topographic map from the ICGC at a scale of
+  1:25 000, and GPX track points.</p>
+  <p>Unlike correction of polynomial raster where crossing of reference networks are used to position GCP, for
+    a digitalized satellite imaged that is not the case and required a visual estimation in comparison to
+    different georeferenced images.</p> 
+
+<h2 id="Manual Geometric Correction of Landsat-5">Manual Geometric Correction of Landsat-7</h2>
+
+
+<p>I began my correction by analyzing the orthophoto PNOA and comparing it to the Landsat images, over a
+  variety of different bands combination such as: (IRp,IRm1,R), (RGB), and (IRm2,G,B) which helped
+  identify accurately ground characteristics such as similar vegetation formations, a clear distinction over
+  water areas and more defined coast line. With this I began adding tie points for both the control points
+  and check points. What I found to be more accurate was to look for water reservoirs, over river
+  intersections and urban buildings with sharp angles.</p>
+
+  <p>My first problem encountered was comprehending the different obtainment dates of both images, since
+    this particular Landsat Images are from 1992 and the PNOA are from the 2017, resulting in different
+    ground characteristic like change in river currents, and creating of new urban like seaports.</p>
+
+<p>I also obtained 2 tie points using a GPX and documenting them in the area near La Sagrada Familia and
+  near Parc de Ciutadella. For tie points using topographic map from the ICGC at a scale of 1:25 000 I
+  focused on the area of the Olympic Cable Park and Applus IDIADA speed circuit. Is important to add that
+  for GPX coordinates were originally displayed in a reference system of Longitude-latitude with WGS84
+  datum which required me to change the cartographic projection to align with the desired reference
+  system of UTM zone 31 Northern Hemisphere with ETRS89 datum. </p>
+  <figure>
+    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_2/GPX_points .png"/> 
+</figure>
+<p>After having both my control point and check point on the uncorrected system I began by converting
+  those VEC points into a COR (CorrGeom) for both files and assigning them DEM of 30m with a resampling method of nearest neighbor. After having both files, I transferred the data of the test file to
+  the GCP file to fit with parameters of the CorrGeom application of generating a spatial orthoimage. </p>
+  <p>To have all bands of the multiband raster simultaneously geometrically corrected I used the CorrGEom
+    application previously stated, inputting my now combined COR file, and adding a MDE raster file which
+    will define the size of the pixel of 30m and the type of correction in rows was set to a 1rst degree
+    without Z.</p>
+    <figure>
+      <img src="https://cris-pintado.github.io/Porfolio1/images/Project_2/Landsat_5.jpg"/> 
+    </figure>
+    <pre><code>
+      Estimadores del error para el Ajuste: 
+│   RMS en X  =     0.455774
+│   RMS en Y  =     0.835561
+│   RMS Total =     0.951784
+│   MCF       =     0.848255
+      </code></pre>
+<p> Test points for a total RMS were also evaluated: </p>
+<pre><code>
+  Estimadores del error para el TEST: 
+│   RMS en X  (del test)=     0.455774
+│   RMS en Y  (del test)=     0.835561
+│   RMS Total (del test)=     0.951784
+│   MCF       (del test)=     0.848255
+    -----------------------------------
+    RMS en unidades destino = 28.403171
+  </code></pre>
+ 
+  <figure>
+    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_2/Landsat5_IRm2,G,B.jpg"/> 
+  </figure>
+<p>This invokes an RMS in units of the respected raster of 28.40m which is an acceptable error considering
+  that each pixel is 30 m. Seen by the MCF of both test and control being below 1.
+  To obtain these results was a long and tedious process, because of constant refinement and adjustment
+  of set points. Which consisted of analyzing each
+  point and deciding whether to delete them from
+  COR file or manually inspecting and observation
+  occurrences such as a point having identical
+  coordinates to another one or even having to
+  designate new point on areas with a more refine
+  appearance to the uncorrected image. </p>
+<p><strong>Demonstration of corrected images over a vector layer of land use for the province of Tarragona, Spain:</strong></p>
+<figure>
+  <img src="https://cris-pintado.github.io/Porfolio1/images/Project_2/Landsat_5_over_vector.jpg"/> 
+</figure>
+  
+<h2 id="Manual Geometric Correction of Landsat-7">Manual Geometric Correction of Landsat-7</h2>
+<P>To have a better understanding of these processes I also decided to geometrically correct the Landsat – 7
+  Enhanced Thematic Mapper Plus images of 8 bands, taken on 30-06-2002. This process was similar to
+  the previous with the difference being of an area of low visibility and contains 8 bands with the 8th band
+  being a panchromatic band with the highest resolution. The correction of images was conducted though
+  the placement of check points, control points, and tie point, sourced only from the orthophoto from the
+  PNOA with resolution of 15m/30m.</P>
+  <p>First by trying to identify the location of the image, which I did by sectionizing a part of the PNOA
+    with a width of 20 Km and going frame by frame from top to bottom until I could find similar
+    characteristic to the uncorrected image.</p>
+  <p>Once I was able to locate the image: (UTM-31N ETRS89)
+    <blockquote>
+    mín. X: 456677.5
+    máx. X: 459182.5
+    mín. Y: 4667672.5
+    máx. Y: 4670372.5
+      </blockquote>
+<p>I began to position adjustment points around the image, on areas
+    analyzing the orthophoto PNOA and comparing it to the Landsat images, over a variety of different
+    bands combination such like before helped identify accurately ground characteristics such as similar
+    vegetation, and clear distinction over water areas. In this case I benefited from the panchromatic band
+    which had the best resolution of them all. Then converting those VEC points into a COR (CorrGeom) for
+    both control points and test points.</p>
+  <p>Finally I used the CorrGEom application previously stated, inputting my now combined COR file, and
+  adding a MDE raster file which will define the size of the pixel of 30m and the type of correction in rows
+  was set to a 1rst degree without Z.
+  <P><pre><code>
+    Estimadores del error para el Ajuste: 
+│   RMS en X  =     0.471352
+│   RMS en Y  =     0.464107
+│   RMS Total =     0.661489
+│   MCF       =     0.636612
+    </code></pre></P>
+My total Root Mean Square in the end for the control points was .63 as seen below which is good
+  indicator of being below the pixel size.
+  </P>
+<p>For my test point a total RMS of 1.58 as seen below, this presents a problem as it does not follow the
+  criteria of below 1 pixel error. </p>
+  <pre><code>
+    Estimadores del error para el TEST: 
+  │   RMS en X  (del test)=     1.685772
+  │   RMS en Y  (del test)=     0.657875
+  │   RMS Total (del test)=     1.809593
+  │   MCF       (del test)=     1.582934
+      -----------------------------------
+      RMS en unidades destino = 54.255421
+    </code></pre>
+<P>This resulted in an RMS in units of the respected raster of 54.25m is not an acceptable error considering
+  that each pixel is 30 m. This error can be attributed to difficulty identifying areas of homogeneous
+  appearance and requires a more detailed observation of the points in place, nevertheless in the end it
+  still presented a rather moderate estimation of the positioning of set image, while consideting the resultion and scale of which this map could be atTributed</P>
+
+  <figure>
+    <img src="https://cris-pintado.github.io/Porfolio1/images/Project_2/Landsar_7GC.jpg"/> 
+</figure>
+
+<h2 id="Correction by automatically placing homologous points with MiraMon's CorGeo2 app">Correction by automatically placing homologous points with MiraMon's CorGeo2 app</h2>
+<P>For the automatic portion of the exercise require to use the application CorGeo2 which was downloaded
+  and placed in the MiraMon directory. Once I understood that the application function over a set of
+  commands, I developed a syntax that details, the what, and the how I wanted my image to be corrected. </P>
+
+  <p>Batch script using parameters from CorGeo2 in Miramon</p>
+  <pre><code>
+    cmd -> C:\MiraMon\CorrGeo2.exe D:\corrgeo\results D:\corrgeo\19831_19920515_1.img 4 0
+    D:\corrgeo\198031_OrtoPNOA_ETRS89_30m.img
+    D:\corrgeo\MDT_ASTER_IGN_198_31_UTM31ETRS89_30m_v2.img
+    D:\corrgeo\MDT_ASTER_IGN_198_31_UTM31ETRS89_300m_v2.img 350133.218750 4624794.500000
+    UTM-31N-ETRS89 /INTERVAL_Z=50 /N_MOSTRES_XY=35 /SAC /MUT
+    </code></pre>
+
+<p>The command required me to adapt my MDE raster to have a pixel density of 300m because is the model
+  from which the point bank will be generated with a lower resolution for an image of 30 m per pixel. I
+  specified the integers “m” and “n” to reflect the altitude intervals and number of samples to choose an
+  interval of 50 and sample of 35 to be able to get the best result correction over a densify portion of
+  points. </p>
+  <pre><code>
+    Estimadores del error para el Ajuste: 
+│   RMS en X  =     0.473391
+│   RMS en Y  =     0.338230
+│   RMS Total =     0.581807
+│   MCF       =     0.435965
+    </code></pre>
+    <pre><code>
+      Estimadores del error para el TEST: 
+    │   RMS en X  (del test)=     0.320430
+    │   RMS en Y  (del test)=     0.292064
+    │   RMS Total (del test)=     0.433563
+    │   MCF       (del test)=     0.368719
+        -----------------------------------
+        RMS en unidades destino = 12.994593
+      </code></pre>
+      <figure>
+        <img src="https://cris-pintado.github.io/Porfolio1/images/Project_2/Landsat_5auto.jpg"/> 
+    </figure>
+<p>The system calculated 478 control points and 452 check points. As expected both control points and check points present a MCF lower than 0.5 and a total RMS of 12.99
+  m which is more than appropriate error as it only presents an error of less the half a pixel.</p> <p>In conclusion, this exercise undertakes the aimed to demonstrate the intricate process of geometric
+    corrections of satellite images lacking georeferencing. The manual geometric corrections involved a
+    detailed analysis of ground features, the adjustment and refinement to achieve a Root Mean Square
+    (RMS) error within acceptable limits. The automatic correction, utilizing the CorGeo2 application,
+    exhibited a more favorable RMS error below half a pixels, and seen by the dispersion of set points on
+    hard to see part of the images indicates the favorableness of automated approach when it comes to a
+    manual selection of point as seen when compared to manual correction of Landsat -7, facilitating both
+    control point selection and continuous refinement in achieving accurate geometric correction for
+    satellite images. </p>
+  
+
+
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://cris-pintado.github.io/Porfolio1/" >
+    &copy;  Christopher Pintado 2024 
+  </a>
+    <div>
+
+
+
+
+
+
+
+<a href="https://www.linkedin.com/in/pintado1999/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/cris-pintado" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="https://cris-pintado.github.io/Porfolio1/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
