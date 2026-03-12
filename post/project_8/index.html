@@ -16,12 +16,29 @@
     
     
       <link href="https://cris-pintado.github.io/Porfolio1/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+      <!--to color the code-->
+      <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+
+      <!--new style for the code-->
+      <style>
+.code-container {
+ max-height: 400px;
+ overflow-y: auto;
+ overflow-x: hidden;
+ background-color: #1e1e1e;
+ color: #dcdcdc;
+ padding: 15px;
+ border-radius: 6px;
+ font-family: monospace;
+}
+.code-container pre {
+ margin: 0;
+ white-space: pre-wrap;
+}
+</style>
     
 
-    
-
-    
-      
 
     
     <meta property="og:title" content="Experimental Study For Expansion Of State Route Stations For Traffic Counts   " />
@@ -209,8 +226,84 @@
 <p>Site priority is decided under third quartile (Q3) of the length distribution of the traffic state stations of the county of Albany. This reduces the total site count of 257 count to 64 that pertains to the mean length of every site.</p>
  
 <!--Add map here of mean of roads -->
+<embed src="https://cris-pintado.github.io/Porfolio1/images/Layout.pdf" type="application/pdf" width="100%" height="600px" />
+
 
 <P>Flooding is a critical global challenge, and accurate analysis is essential for mitigation and planning. Using Google Earth Engine (GEE), this project demonstrates a robust method for flood detection and visualization in a specified region, including its transformation into web-ready layers.</P>
+<P><strong>Code:</strong></P>
+  
+
+<div class="code-container">
+<pre>
+  <code class="language-python">
+  import arcpy
+
+arcpy.env.workspace = r"gdb"
+arcpy.env.overwriteOutput = True
+
+
+input_fc = "State_Route_Stations_to_Investigate"
+intersection_layer = "State_Route_Statio_Intersect_NY"
+output_fc = "State_Route_Intersection_MeanPoints"
+spatial_ref = arcpy.Describe(input_fc).spatialReference
+
+
+arcpy.management.CreateFeatureclass(
+   arcpy.env.workspace,
+   output_fc,
+   "POINT",
+   spatial_reference=spatial_ref
+)
+arcpy.management.AddField(output_fc, "Original_FID", "LONG")
+arcpy.management.AddField(output_fc, "Line_Length", "DOUBLE")
+arcpy.management.AddField(output_fc, "Intersection_Count", "LONG")
+
+#logicas de fudamento avg
+arcpy.management.MakeFeatureLayer(intersection_layer, "temp_intersections")
+with arcpy.da.SearchCursor(input_fc, ["OID@", "SHAPE@"]) as s_cursor: # busqueda en el input
+   with arcpy.da.InsertCursor(
+       output_fc,
+       ["SHAPE@", "Original_FID", "Line_Length", "Intersection_Count"]
+   ) as i_cursor:
+       for oid, line_geom in s_cursor:
+           if not line_geom:
+               continue
+           
+           arcpy.management.SelectLayerByLocation(
+               "temp_intersections",
+               "INTERSECT",
+               line_geom
+           )
+           measures = []
+           with arcpy.da.SearchCursor("temp_intersections", ["SHAPE@"]) as p_cursor:
+               for (point_geom,) in p_cursor:
+                   if point_geom:
+                       
+                       distance = line_geom.measureOnLine(point_geom.centroid)
+                       measures.append(distance)#save distance 
+           
+           if len(measures) > 0:
+               mean_distance = sum(measures) / len(measures)
+            
+               mean_point = line_geom.positionAlongLine(mean_distance)# mean code 
+                
+               i_cursor.insertRow([
+                   mean_point,
+                   oid,
+                   line_geom.length,
+                   len(measures)
+               ])# coloca cal en capa 
+
+try:
+   aprx = arcpy.mp.ArcGISProject("CURRENT")
+   aprx.activeMap.addDataFromPath(
+       arcpy.env.workspace + "\\" + output_fc
+   )
+except:
+   print(f"Output created at: {output_fc}")
+  </code>
+</pre>
+</div>
 
 <h3>Identification of Elevated Traffic Stations on New York State Routes Using ADDT Analysis:</h3>
 
@@ -222,6 +315,9 @@
   <p>Routes with fewer than four stations were excluded from the main analysis because the sample size was insufficient for meaningful statistical comparison. But still form part of the analysis based on a percentage priority, since a standard deviation would not be appropriate based on the low amount of data in comparison.</p>
   <p>The filtering steps ensured that outlier detection would be statistically meaningful.</p>
   <!--Add other map here -->
+
+<embed src="https://cris-pintado.github.io/Porfolio1/images/map_aadt.pdf" type="application/pdf" width="100%" height="600px" />
+
 <h3>Statistical Outlier Detector: </h3>
   <p>Anomalies were Identified using Z-score analysis, which measures how far a station value deviates from the average ADDT of its route: </p>
     <ul><p><strong>Z = (x - &mu;) / &sigma; </strong></p></ul>
@@ -313,6 +409,9 @@
     
 
   <script src="https://cris-pintado.github.io/Porfolio1/dist/js/app.3fc0f988d21662902933.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 
 
   </body>
